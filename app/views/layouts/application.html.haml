@@ -1,10 +1,11 @@
-/* Application */
-
 !!!
 %html
   %head
     %meta{ content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }/
-    %title Magensinus Education
+    %meta{ content: "width=device-width, initial-scale=1.0", name: "viewport" }/
+    %meta{ content: "IE=Edge", "http-equiv" => "X-UA-Compatible" }/
+    %title= application_configuration["title"]
+    %meta{ content: application_configuration["description"].to_s, name: "description" }/
     = render partial: "lib/global/meta_tags"
     = render partial: "lib/global/favicon"
     = csrf_meta_tags
