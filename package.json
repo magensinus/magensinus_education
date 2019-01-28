@@ -1,0 +1,7 @@
+{
+  "name": "magensinus_education",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3"
+  }
+}

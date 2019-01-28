@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+    %meta{ content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }/
+    %title Magensinus Education
+    = render partial: "lib/global/meta_tags"
+    = render partial: "lib/global/favicon"
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload"
+    = javascript_include_tag "application", "data-turbolinks-track": "reload"
+  %body
+    / Header
+    %header.universal
+      .universal-box
+        .universal-item
+    / Main
+    %main.universal
+      .universal-box
+        .universal-item
+          = yield
+    / Footer
+    %footer.universal
+      .universal-box
+        .universal-item
