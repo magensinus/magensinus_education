@@ -40,8 +40,8 @@ gem "jbuilder", "~> 2.5"
 gem "bootsnap", ">= 1.1.0", require: false
 
 # Load Mies
-# gem "mies", "0.0.1.alpha", github: "iigethr/mies"
-gem "mies", "0.0.1.alpha", path: "/Users/tonydefaria/Box Sync/iigethr/gems/mies"
+gem "mies", "0.0.1.alpha", github: "iigethr/mies"
+# gem "mies", "0.0.1.alpha", path: "/Users/tonydefaria/Box Sync/iigethr/gems/mies"
 
 # Haml-rails provides Haml generators for Rails.
 gem "haml-rails", "~> 1.0"
