@@ -1,0 +1,18 @@
+# See http://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+User-agent: *
+Disallow: /app/
+Disallow: /bin/
+Disallow: /config/
+Disallow: /db/
+Disallow: /lib/
+Disallow: /log/
+Disallow: /storage/
+Disallow: /test/
+Disallow: /tmp/
+Disallow: /vendor/
+Disallow: /public/404.html
+Disallow: /public/422.html
+Disallow: /public/500.html
+Disallow: /public/assets/
+Disallow: /README.md
+Disallow: /WARNINGS.md
