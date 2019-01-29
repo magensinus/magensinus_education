@@ -1,0 +1,33 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File:    Base
+// Project: Magensinus Education
+// -------------------------------------------------------------
+
+*,
+*::after,
+*::before {
+  @include border-box;
+  letter-spacing: .01em;
+}
+
+html {
+  background-color: $blue;
+}
+
+body {
+  background-color: $gray-000;
+}
+
+html,
+body {
+  @include border-box;
+  @include clearfix;
+  color: $black;
+  font-family: $sans;
+  font-size: 18px;
+  letter-spacing: .01em;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}

@@ -14,3 +14,5 @@
 //= require activestorage
 //= require turbolinks
 //= require jquery/dist/jquery
+//= require altai_center/dist/altai_center
+//= require initializer
