@@ -7,16 +7,22 @@ $class: "brand";
 
 .#{$class} {
   @include border-box;
+  float: left;
+  width: 240px;
   .#{$class}-box {
     @include border-box;
     float: left;
+    width: 100%;
     .#{$class}-item {
       @include border-box;
       float: left;
       padding: 8px;
+      width: 100%;
       a {
         float: left;
         line-height: 32px;
+        overflow: hidden;
+        width: 100%;
         img {
           float: left;
         }
@@ -29,6 +35,8 @@ $class: "brand";
 // -------------------------------------------------------------
 @media #{$double-extra-small} {
   .#{$class} {
+    float: right;
+    width: auto;
     .#{$class}-box {
       .#{$class}-item {
       }
@@ -40,6 +48,8 @@ $class: "brand";
 // ------------------------------------------------------------
 @media #{$extra-small} {
   .#{$class} {
+    float: right;
+    width: auto;
     .#{$class}-box {
       .#{$class}-item {
       }
@@ -51,6 +61,8 @@ $class: "brand";
 // -------------------------------------------------------------
 @media #{$small} {
   .#{$class} {
+    float: right;
+    width: auto;
     .#{$class}-box {
       .#{$class}-item {
       }

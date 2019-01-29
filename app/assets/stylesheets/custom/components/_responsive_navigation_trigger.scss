@@ -1,28 +1,22 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File:    Legal navigation
+// File:    Responsive navigation trigger
 // Project: Magensinus Education
 // -------------------------------------------------------------
 
-$class: "legal-navigation";
+$class: "responsive-navigation-trigger";
 
 .#{$class} {
   @include border-box;
-  float: right;
+  float: left;
   .#{$class}-box {
     @include border-box;
-    float: left;
-    padding: 4px;
     .#{$class}-item {
       @include border-box;
       float: left;
-      padding: 4px;
+      padding: 8px;
       a {
-        float: left;
         font-size: 14px;
-        line-height: 14px;
-        // Themes
-        &.white { @include link-white-theme; }
-        &.dark-blue { @include link-dark-blue-theme; }
+        line-height: 32px;
       }
     }
   }
@@ -32,8 +26,11 @@ $class: "legal-navigation";
 // -------------------------------------------------------------
 @media #{$double-extra-small} {
   .#{$class} {
+    @include show-block-element;
     .#{$class}-box {
+      @include show-block-element;
       .#{$class}-item {
+        @include show-block-element;
       }
     }
   }
@@ -43,8 +40,11 @@ $class: "legal-navigation";
 // ------------------------------------------------------------
 @media #{$extra-small} {
   .#{$class} {
+    @include show-block-element;
     .#{$class}-box {
+      @include show-block-element;
       .#{$class}-item {
+        @include show-block-element;
       }
     }
   }
@@ -54,8 +54,11 @@ $class: "legal-navigation";
 // -------------------------------------------------------------
 @media #{$small} {
   .#{$class} {
+    @include show-block-element;
     .#{$class}-box {
+      @include show-block-element;
       .#{$class}-item {
+        @include show-block-element;
       }
     }
   }
@@ -65,8 +68,11 @@ $class: "legal-navigation";
 // -------------------------------------------------------------
 @media #{$medium} {
   .#{$class} {
+    @include hide-block-element;
     .#{$class}-box {
+      @include hide-block-element;
       .#{$class}-item {
+        @include hide-block-element;
       }
     }
   }
@@ -76,8 +82,11 @@ $class: "legal-navigation";
 // -------------------------------------------------------------
 @media #{$large} {
   .#{$class} {
+    @include hide-block-element;
     .#{$class}-box {
+      @include hide-block-element;
       .#{$class}-item {
+        @include hide-block-element;
       }
     }
   }
@@ -87,8 +96,11 @@ $class: "legal-navigation";
 // -------------------------------------------------------------
 @media #{$extra-large} {
   .#{$class} {
+    @include hide-block-element;
     .#{$class}-box {
+      @include hide-block-element;
       .#{$class}-item {
+        @include hide-block-element;
       }
     }
   }
@@ -98,8 +110,11 @@ $class: "legal-navigation";
 // -------------------------------------------------------------
 @media #{$double-extra-large} {
   .#{$class} {
+    @include hide-block-element;
     .#{$class}-box {
+      @include hide-block-element;
       .#{$class}-item {
+        @include hide-block-element;
       }
     }
   }

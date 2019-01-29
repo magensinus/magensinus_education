@@ -7,9 +7,10 @@ $class: "primary-navigation";
 
 .#{$class} {
   @include border-box;
+  width: 360px;
+  float: left;
   .#{$class}-box {
     @include border-box;
-    float: left;
     .#{$class}-item {
       @include border-box;
       float: left;
@@ -26,8 +27,11 @@ $class: "primary-navigation";
 // -------------------------------------------------------------
 @media #{$double-extra-small} {
   .#{$class} {
+    @include hide-block-element;
     .#{$class}-box {
+      @include hide-block-element;
       .#{$class}-item {
+        @include hide-block-element;
       }
     }
   }
@@ -37,9 +41,11 @@ $class: "primary-navigation";
 // ------------------------------------------------------------
 @media #{$extra-small} {
   .#{$class} {
+    @include hide-block-element;
     .#{$class}-box {
+      @include hide-block-element;
       .#{$class}-item {
-        padding: 8px 8px;
+        @include hide-block-element;
       }
     }
   }
@@ -49,9 +55,11 @@ $class: "primary-navigation";
 // -------------------------------------------------------------
 @media #{$small} {
   .#{$class} {
+    @include hide-block-element;
     .#{$class}-box {
+      @include hide-block-element;
       .#{$class}-item {
-        padding: 8px 8px;
+        @include hide-block-element;
       }
     }
   }
@@ -61,6 +69,7 @@ $class: "primary-navigation";
 // -------------------------------------------------------------
 @media #{$medium} {
   .#{$class} {
+    width: 240px;
     .#{$class}-box {
       .#{$class}-item {
         padding: 8px 16px;
