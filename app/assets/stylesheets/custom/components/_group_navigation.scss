@@ -7,14 +7,17 @@ $class: "group-navigation";
 
 .#{$class} {
   @include border-box;
-  float: left;
+  float: right;
+  overflow: hidden;
+  width: auto;
   .#{$class}-box {
     @include border-box;
-    float: left;
+    float: right;
     .#{$class}-item {
       @include border-box;
       float: left;
       padding: 8px;
+      overflow: hidden;
       a {
         float: left;
         img {
@@ -29,8 +32,11 @@ $class: "group-navigation";
 // -------------------------------------------------------------
 @media #{$double-extra-small} {
   .#{$class} {
+    width: 100%;
     .#{$class}-box {
+      width: 100%;
       .#{$class}-item {
+        width: 100%;
       }
     }
   }
@@ -40,8 +46,11 @@ $class: "group-navigation";
 // ------------------------------------------------------------
 @media #{$extra-small} {
   .#{$class} {
+    width: 100%;
     .#{$class}-box {
+      width: 100%;
       .#{$class}-item {
+        width: 100%;
       }
     }
   }
@@ -51,8 +60,11 @@ $class: "group-navigation";
 // -------------------------------------------------------------
 @media #{$small} {
   .#{$class} {
+    width: 100%;
     .#{$class}-box {
+      width: 100%;
       .#{$class}-item {
+        width: 100%;
       }
     }
   }

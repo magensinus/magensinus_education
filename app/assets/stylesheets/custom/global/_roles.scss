@@ -21,6 +21,19 @@
   padding: 0;
 }
 
+.footer-left {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 480px;
+}
+.footer-right {
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 480px;
+}
+
 .container-top {
   margin: 0;
   min-height: 68px;
@@ -54,11 +67,23 @@
 // Media Query 240px
 // -------------------------------------------------------------
 @media #{$double-extra-small} {
+  .footer-left {
+    width: 240px;
+  }
+  .footer-right {
+    width: 240px;
+  }
 }
 
 // Media Query 360px
 // ------------------------------------------------------------
 @media #{$extra-small} {
+  .footer-left {
+    width: 360px;
+  }
+  .footer-right {
+    width: 360px;
+  }
 }
 
 // Media Query 480px
@@ -69,6 +94,12 @@
 // Media Query 720px
 // -------------------------------------------------------------
 @media #{$medium} {
+  .footer-left {
+    width: 360px;
+  }
+  .footer-right {
+    width: 360px;
+  }
 }
 
 // Media Query 960px

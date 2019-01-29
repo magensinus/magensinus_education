@@ -4,23 +4,22 @@
   .separator.large
   .universal-box
     .universal-item
-      .col-small-1-1.left
-        .col-double-extra-small-1-1.left
-          = render partial: "lib/components/secondary_navigation"
-      .col-small-1-1.right
-        .col-double-extra-small-1-1.right
-          = render partial: "lib/components/social_navigation"
-          .separator.extra-small
-          = render partial: "lib/components/brand_footer"
-          .separator.extra-small
-          = render partial: "lib/components/vcard"
+      .footer-left
+        = render partial: "lib/components/secondary_navigation"
+      .footer-right
+        = render partial: "lib/components/social_navigation"
+        .separator.extra-small
+        = render partial: "lib/components/brand_footer"
+        .separator.extra-small
+        = render partial: "lib/components/vcard"
         .separator.extra-small
         = render partial: "lib/components/group_navigation"
-    .separator.large
-
-  .wide.left.blue-700-bg.pg-24-0-0
+  .separator.large
+  .wide.left.blue-700-bg
+    .separator.extra-small
     = render partial: "lib/components/sponsor_navigation"
   .wide.left.blue-700-bg
     = render partial: "lib/components/legal_navigation"
-  .wide.left.blue-700-bg.pg-0-0-24
+  .wide.left.blue-700-bg
     = render partial: "lib/components/copyright"
+    .separator.extra-small

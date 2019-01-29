@@ -1,30 +1,31 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File:    Secondary navigation
+// File:    Brand footer
 // Project: Magensinus Education
 // -------------------------------------------------------------
 
-$class: "secondary-navigation";
+$class: "brand-footer";
 
 .#{$class} {
   @include border-box;
   float: left;
-  width: 100%;
+  width: auto;
   .#{$class}-box {
     @include border-box;
     float: left;
-    padding: 8px;
     width: 100%;
     .#{$class}-item {
       @include border-box;
       float: left;
+      padding: 8px;
       width: 100%;
       a {
         float: left;
-        font-size: 14px;
-        line-height: 24px;
-        width: auto;
-        // Themes
-        &.white { @include link-white-theme; }
+        line-height: 32px;
+        overflow: hidden;
+        width: 100%;
+        img {
+          float: left;
+        }
       }
     }
   }
@@ -34,12 +35,10 @@ $class: "secondary-navigation";
 // -------------------------------------------------------------
 @media #{$double-extra-small} {
   .#{$class} {
+    float: right;
+    width: 100%;
     .#{$class}-box {
       .#{$class}-item {
-        a {
-          text-align: center;
-          width: 100%;
-        }
       }
     }
   }
@@ -49,12 +48,10 @@ $class: "secondary-navigation";
 // ------------------------------------------------------------
 @media #{$extra-small} {
   .#{$class} {
+    float: right;
+    width: 100%;
     .#{$class}-box {
       .#{$class}-item {
-        a {
-          text-align: center;
-          width: 100%;
-        }
       }
     }
   }
@@ -64,12 +61,10 @@ $class: "secondary-navigation";
 // -------------------------------------------------------------
 @media #{$small} {
   .#{$class} {
+    float: right;
+    width: 100%;
     .#{$class}-box {
       .#{$class}-item {
-        a {
-          text-align: center;
-          width: 100%;
-        }
       }
     }
   }

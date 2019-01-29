@@ -7,11 +7,18 @@ $class: "vcard";
 
 .#{$class} {
   @include border-box;
+  float: right;
+  width: 100%;
   .#{$class}-box {
     @include border-box;
+    float: right;
     .#{$class}-item {
       @include border-box;
+      float: left;
       padding: 8px;
+      p {
+        text-align: right;
+      }
     }
   }
 }
@@ -20,8 +27,14 @@ $class: "vcard";
 // -------------------------------------------------------------
 @media #{$double-extra-small} {
   .#{$class} {
+    width: 100%;
     .#{$class}-box {
+      width: 100%;
       .#{$class}-item {
+        width: 100%;
+        p {
+          text-align: center;
+        }
       }
     }
   }
@@ -31,8 +44,14 @@ $class: "vcard";
 // ------------------------------------------------------------
 @media #{$extra-small} {
   .#{$class} {
+    width: 100%;
     .#{$class}-box {
+      width: 100%;
       .#{$class}-item {
+        width: 100%;
+        p {
+          text-align: center;
+        }
       }
     }
   }
@@ -42,8 +61,14 @@ $class: "vcard";
 // -------------------------------------------------------------
 @media #{$small} {
   .#{$class} {
+    width: 100%;
     .#{$class}-box {
+      width: 100%;
       .#{$class}-item {
+        width: 100%;
+        p {
+          text-align: center;
+        }
       }
     }
   }

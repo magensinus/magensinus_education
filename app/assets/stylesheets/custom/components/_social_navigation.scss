@@ -8,11 +8,13 @@ $class: "social-navigation";
 .#{$class} {
   @include border-box;
   float: right;
-  width: 240px;
+  overflow: hidden;
+  width: auto;
   .#{$class}-box {
     @include border-box;
     float: right;
     padding: 8px;
+    width: auto;
     .#{$class}-item {
       @include border-box;
       float: left;
@@ -24,7 +26,10 @@ $class: "social-navigation";
 // -------------------------------------------------------------
 @media #{$double-extra-small} {
   .#{$class} {
+    margin: 16px 0 0;
+    width: 100%;
     .#{$class}-box {
+      width: auto;
       .#{$class}-item {
       }
     }
@@ -35,7 +40,10 @@ $class: "social-navigation";
 // ------------------------------------------------------------
 @media #{$extra-small} {
   .#{$class} {
+    margin: 16px 0 0;
+    width: 100%;
     .#{$class}-box {
+      width: auto;
       .#{$class}-item {
       }
     }
@@ -46,7 +54,10 @@ $class: "social-navigation";
 // -------------------------------------------------------------
 @media #{$small} {
   .#{$class} {
+    margin: 16px 0 0;
+    width: 100%;
     .#{$class}-box {
+      width: auto;
       .#{$class}-item {
       }
     }
