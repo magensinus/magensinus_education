@@ -9,6 +9,13 @@ altai_center@^0.0.3:
   dependencies:
     jquery "^3.0"
 
+altai_panel@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/altai_panel/-/altai_panel-1.0.4.tgz#6341ea96bfc0edf5903fc07c119a96acbe11dd83"
+  integrity sha512-6bQtOnPR3ge8LrmvvV7neJUkBdILCEHLAAM9ki8YsZa8KYlLOYTfJO4FyoEwg1UYOKkaw9VFUmBuRvu2wNIqIg==
+  dependencies:
+    jquery "^3.0"
+
 jquery@^3, jquery@^3.0:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"

@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "altai_center": "^0.0.3",
+    "altai_panel": "^1.0.4",
     "jquery": "^3"
   }
 }
