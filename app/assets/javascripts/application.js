@@ -16,4 +16,5 @@
 //= require jquery/dist/jquery
 //= require altai_center/dist/altai_center
 //= require altai_panel/dist/altai_panel
+//= require altai_toggle/dist/altai_toggle
 //= require initializer

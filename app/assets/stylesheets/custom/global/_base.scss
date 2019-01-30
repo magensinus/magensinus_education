@@ -31,3 +31,12 @@ body {
   padding: 0;
   width: auto;
 }
+
+.overlay {
+  background: $green;
+  float: left;
+  width: 100%;
+  position: relative;
+  top: 112px;
+  z-index: 99999;
+}
