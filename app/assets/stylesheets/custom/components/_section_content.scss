@@ -1,9 +1,9 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File:    Content
+// File:    Section content
 // Project: Magensinus Education
 // -------------------------------------------------------------
 
-$class: "content";
+$class: "section-content";
 
 .#{$class} {
   @include border-box;
@@ -16,8 +16,26 @@ $class: "content";
     .#{$class}-item {
       @include border-box;
       float: left;
-      padding: 16px;
       width: 100%;
+      .#{$class}-left {
+        @include border-box;
+        float: left;
+        padding: 16px;
+        width: 640px;
+      }
+      .#{$class}-right {
+        @include border-box;
+        float: right;
+        padding: 16px;
+        width: 320px;
+      }
+      .#{$class}-inner {
+        @include border-box;
+        background-color: $white;
+        float: left;
+        padding: 32px;
+        width: 100%;
+      }
     }
   }
 }
@@ -28,6 +46,12 @@ $class: "content";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
+        .#{$class}-left {
+          width: 240px;
+        }
+        .#{$class}-right {
+          width: 240px;
+        }
       }
     }
   }
@@ -39,6 +63,12 @@ $class: "content";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
+        .#{$class}-left {
+          width: 360px;
+        }
+        .#{$class}-right {
+          width: 360px;
+        }
       }
     }
   }
@@ -50,6 +80,12 @@ $class: "content";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
+        .#{$class}-left {
+          width: 480px;
+        }
+        .#{$class}-right {
+          width: 480px;
+        }
       }
     }
   }
@@ -61,6 +97,12 @@ $class: "content";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-item {
+        .#{$class}-left {
+          width: 720px;
+        }
+        .#{$class}-right {
+          width: 720px;
+        }
       }
     }
   }

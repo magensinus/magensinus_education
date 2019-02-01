@@ -1,9 +1,9 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File:    Content
+// File:    Section navigation
 // Project: Magensinus Education
 // -------------------------------------------------------------
 
-$class: "content";
+$class: "section-navigation";
 
 .#{$class} {
   @include border-box;
@@ -12,12 +12,17 @@ $class: "content";
   .#{$class}-box {
     @include border-box;
     float: left;
+    padding: 28px 0;
     width: 100%;
     .#{$class}-item {
       @include border-box;
       float: left;
-      padding: 16px;
+      padding: 4px 0;
       width: 100%;
+      a {
+        text-align: center;
+        width: 100%;
+      }
     }
   }
 }

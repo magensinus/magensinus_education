@@ -1,0 +1,40 @@
+/* Index */
+
+.container-top.left
+  .breadcrumbs
+    .breadcrumbs-box
+      .breadcrumbs-item
+        = link_to courses_path, class: "link small" do
+          .icon.left
+            = image_tag "icons/back.png"
+          voltar
+.container-middle.left
+  .content
+    .content-box
+      .content-item
+        %h1.left Mollis Venenatis Pellentesque Inceptos
+  .section-content
+    .section-content-box
+      .section-content-item
+        .section-content-left
+          .section-content-inner#ajax-content
+            %h3 Risus Etiam Egestas
+            .trix
+              %div Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.
+
+              %div Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.
+
+              %div Curabitur blandit tempus porttitor. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor.
+        .section-content-right
+          .section-navigation
+            .section-navigation-box
+              .section-navigation-item
+                = link_to "Risus Etiam Egestas", course_path(id: "12345678", title: "Risus Etiam Egestas"), remote: true, class: "button large blue"
+              .section-navigation-item
+                = link_to "Ridiculus Elit Fringilla Venenatis", course_path(id: "123456789", title: "Ridiculus Elit Fringilla Venenatis"), remote: true, class: "button large blue"
+              .section-navigation-item
+                = link_to "Cras Mollis", course_path(id: "1234567810", title: "Cras Mollis"), remote: true, class: "button large blue"
+              .section-navigation-item
+                = link_to "Dapibus Sem Mollis", course_path(id: "1234567811", title: "Dapibus Sem Mollis"), remote: true, class: "button large blue"
+
+.container-bottom.left
