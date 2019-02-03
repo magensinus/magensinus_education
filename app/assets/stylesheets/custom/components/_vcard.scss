@@ -33,6 +33,7 @@ $class: "vcard";
       .#{$class}-item {
         width: 100%;
         p {
+          margin: 0;
           text-align: center;
         }
       }

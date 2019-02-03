@@ -11,8 +11,16 @@ bindEvents = function() {
     wrapper: false,
     close: false
   });
-  var divHeight = $('.universal.main').innerHeight();
-  $('.responsive-navigation').css('min-height', divHeight + 'px');
+  // If object found run actions
+  if ($('.universal.main').length > 0) {
+    var divHeight = $('.universal.main').innerHeight();
+    $('.responsive-navigation').css('min-height', divHeight + 'px');
+  }
+  if ($('.universal.hero').length > 0) {
+    var divHeight = $('.universal.hero').innerHeight();
+    $('.responsive-navigation').css('min-height', divHeight + 'px');
+    $(".responsive-panel").css('min-height', divHeight + 'px');
+  }
 };
 
 $(document).on( "turbolinks:load", function() {

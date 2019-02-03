@@ -1,6 +1,6 @@
 GIT
-  remote: https://github.com/iigethr/mies.git
-  revision: 990df872e989e779898eb85082c0317e26cb7102
+  remote: https://github.com/magensinus/mies_magensinus.git
+  revision: 09e8a1d96cacefedd66e2d1bd3a4ac3019186841
   specs:
     mies (0.0.1.alpha)
       autoprefixer-rails (~> 9.0)
